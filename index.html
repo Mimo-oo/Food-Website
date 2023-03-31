@@ -27,15 +27,14 @@
         </div>
     </div>
     <div class="navbar" id="navbar">
-        <a href="#home">Home</a> 
-            <p onclick="this.parentElement.style.display = 'none'" id="cancel">X</p>
+        <a href="#Home">Home</a> 
             <a href="#About">About</a> 
             <a href="#Menu">Menu</a> 
             <a href="#Popular">Popular</a> 
             <a href="#Gallery">Gallery</a> 
             <a href="#Order">Order</a> 
     </div>
-    <section class="home">
+    <section class="home" id="Home">
         <div class="homewords">
             <h2 id="word1">We Believe Good Food<br> Brightens Everyone's Day</h2>
             <p id="word2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas adipisci dolores animi itaque tempore doloribus saepe. Itaque consectetur, ad facilis sequi nobis dicta nostrum fugit harum repellendus illum aliquam quaerat.</p>
@@ -45,7 +44,7 @@
             <img src="./images/home-img.png" alt="home food">
         </div>
     </section>
-    <section class="about">
+    <section class="about" id="About">
         <div class="aboutimage">
             <img src="./images/about-frame-img.png" alt="about frame">
         </div>
@@ -55,12 +54,12 @@
             <input type="button" id="inp" value="Learn More">
         </div>
     </section>
-    <section class="meall">
+    <section class="meall" id="Menu">
         <div class="meal">
             <h4>Our Delicious <span class="meal2">Menu</span></h4>
         </div>
         <div class="container">
-            <input type="button" value="Breakfast" class="link " onclick="food(event, 'Breakfast')">
+            <input type="button" value="Breakfast" id="chan" class="link " onclick="food(event, 'Breakfast')">
             <input type="button" value="Lunch" class="link" onclick="food(event, 'Lunch')">
             <input type="button" value="Dinner" class="link" onclick="food(event, 'Dinner')">
             <input type="button" value="Desert" class="link" onclick="food(event, 'Desert')">
@@ -92,7 +91,123 @@
             <p>Lorem Ipsum Dolor Sit Amet, Consectetur Adipisicing Elit. Tempore, Perspiciatis</p>
         </div>
     </main>
-    
+    <main class="popular" id="Popular">
+        <div >
+            <p class="pops"><b>Most <span class="meal2">Popular</span> food</b></p>
+        </div>
+        <div class="cardcont">
+            <div class="card">               
+                <div class="cardimg">
+                    <img src="./images/product-1.jpg" alt="product">
+                </div>
+                <h6>Delicious Food</h6>
+                <p>$50.00</p>
+                <input type="button" value="Add to Cart" class="init">
+            </div>
+            <div class="card">               
+                <div class="cardimg">
+                    <img src="./images/product-4.jpg" alt="product">
+                </div>
+                <h6>Delicious Food</h6>
+                <p>$50.00</p>
+                <input type="button" value="Add to Cart" class="init">
+            </div>
+            <div class="card">               
+                <div class="cardimg">
+                    <img src="./images/product-2.jpg" alt="product">
+                </div>
+                <h6>Delicious Food</h6>
+                <p>$50.00</p>
+                <input type="button" value="Add to Cart" class="init">
+            </div>
+            <div class="card">               
+                <div class="cardimg">
+                    <img src="./images/product-3.jpg" alt="product">
+                </div>
+                <h6>Delicious Food</h6>
+                <p>$50.00</p>
+                <input type="button" value="Add to Cart" class="init">
+            </div>
+        </div>
+    </main>
+    <section class="gallery" id="Gallery">
+        <div class="meal">
+            <h4>Our Food <span class="meal2">Gallery</span></h4>
+        </div>
+        <div class="mgallery">
+            <div class="delicacy">
+                <img src="./images/img1.jpg">                
+            </div>
+            <div class="delicacy">
+                <img src="./images/img2.jpg">
+            </div>
+            <div class="delicacy">
+                <img src="./images/img3.jpg">
+            </div>
+            <div class="delicacy">
+                <img src="./images/img4.jpg">
+            </div>
+            <div class="delicacy">
+                <img src="./images/img5.jpg">
+            </div>
+            <div class="delicacy">
+                <img src="./images/img6.jpg">
+            </div>
+        </div>
+    </section>
+    <section id="Order">
+        <h4 class="meal">Make an<span class="meal2"> Order</span></h4>
+        <div class="all">
+        <div class="oform">
+            <form onsubmit="validate()">
+                <input type="text" placeholder="Name" id="name"><br>
+                <input type="text" placeholder="E-mail" id="text"><br>
+                <input type="password" placeholder="Password" id="psd"><br>
+                <input type="number" placeholder="Phone Number" id="tel"><br>
+                <input type="text" placeholder="Address" id="textarea">
+                <!-- <textarea name="Address" rows="20" cols="30">Address</textarea><br> -->
+                <input type="submit" value="Order Now" id="ntt">
+            </form>
+        </div>
+        <div class="formimg">
+            <img src="./images/form-img.jpg">
+        </div>
+    </div>
+    </section>
+    <footer>
+        <div class="last">
+            <h3>Contact Info</h3>
+            <p>Tammy Nora </p>
+            <p>Tammynora@gmail.com</p>
+            <p>+234 4754 456 8213</p>
+        </div>
+        <div class="last">
+            <h3>Branch Location</h3>
+            <p>Place 1</p>
+            <p>Place 2</p>
+            <p>Place 3</p>
+        </div>
+        <div class="last">
+            <h3>Quick Links</h3>
+            <a href="#Home">Home</a>
+            <a href="#About">About</a> 
+            <a href="#Menu">Menu</a> 
+            <a href="#Popular">Popular</a> 
+            <a href="#Gallery">Gallery</a> 
+            <a href="#Order">Order</a> 
+        </div>
+        <div class="last">
+            <h3>Follow Us</h3>
+            <a href="https://www.facebook.com">Facebook</a>
+            <a href="https://www.Twitter.com">Twitter</a> 
+            <a href="https://www.instagram.com">Instagram</a> 
+            <a href="https://www.linkedin.com">LinkedIn</a>            
+        </div>
+                
+    </footer>
+    <div class="end">
+        <p>Copyright 2023 || All right reserved</p>
+        </div>
 
     <script src="main.js"></script> 
 </body>
