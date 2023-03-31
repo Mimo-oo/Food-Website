@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food website</title>
+    <link rel="stylesheet" href="mystyle.css">
+</head>
+<body>
+    <div class="menubar">
+        <div class="log">
+            <img src="./images/images.jpg" class="logo" alt="Logo">
+        </div>
+        <div class="navBar">
+            <a href="#home">Home</a> 
+            <a href="#About">About</a> 
+            <a href="#Menu">Menu</a> 
+            <a href="#Popular">Popular</a> 
+            <a href="#Gallery">Gallery</a> 
+            <a href="#Order">Order</a> 
+        </div>
+        <div onclick="change(this)" class="bar">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+    </div>
+    <div class="navbar" id="navbar">
+        <a href="#home">Home</a> 
+            <p onclick="this.parentElement.style.display = 'none'" id="cancel">X</p>
+            <a href="#About">About</a> 
+            <a href="#Menu">Menu</a> 
+            <a href="#Popular">Popular</a> 
+            <a href="#Gallery">Gallery</a> 
+            <a href="#Order">Order</a> 
+    </div>
+    <section class="home">
+        <div class="homewords">
+            <h2 id="word1">We Believe Good Food<br> Brightens Everyone's Day</h2>
+            <p id="word2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas adipisci dolores animi itaque tempore doloribus saepe. Itaque consectetur, ad facilis sequi nobis dicta nostrum fugit harum repellendus illum aliquam quaerat.</p>
+            <input type="button" value="Get Started">
+        </div>
+        <div class="homefood">
+            <img src="./images/home-img.png" alt="home food">
+        </div>
+    </section>
+    <section class="about">
+        <div class="aboutimage">
+            <img src="./images/about-frame-img.png" alt="about frame">
+        </div>
+        <div class="aboutwords">
+            <h3 id="word3">A Word About Us </h3>
+            <p id="word4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea quae quidem omnis nesciunt tempora at. Cum doloremque facilis a et, culpa suscipit! Obcaecati, labore ullam? Eaque harum maiores id provident?</p>
+            <input type="button" id="inp" value="Learn More">
+        </div>
+    </section>
+    <section class="meall">
+        <div class="meal">
+            <h4>Our Delicious <span class="meal2">Menu</span></h4>
+        </div>
+        <div class="container">
+            <input type="button" value="Breakfast" class="link " onclick="food(event, 'Breakfast')">
+            <input type="button" value="Lunch" class="link" onclick="food(event, 'Lunch')">
+            <input type="button" value="Dinner" class="link" onclick="food(event, 'Dinner')">
+            <input type="button" value="Desert" class="link" onclick="food(event, 'Desert')">
+        </div>
+    </section>
+    <main class="mainmeal">
+        <div class="mealimage">
+                <div class="content" id="Breakfast">
+                    <img src="./images/menu-breakfast.jpg">
+                </div>
+                <div class="content" id="Lunch">
+                    <img src="./images/menu-lunch.jpg">
+                </div>
+                <div class="content" id="Dinner">
+                    <img src="./images/menu-dinner.jpg">
+                </div>
+                <div class="content" id="Desert">
+                    <img src="./images/menu-desert.jpg">
+                </div>
+        </div>
+        <div class="mealwords">
+            <h5><span class="meal2">01.</span> We Serve The Best Food in the country</h5>
+            <p>Lorem Ipsum Dolor Sit Amet, Consectetur Adipisicing Elit. Tempore, Perspiciatis</p>
+            <h5><span class="meal2">02.</span> We Serve The Best Food in the country</h5>
+            <p>Lorem Ipsum Dolor Sit Amet, Consectetur Adipisicing Elit. Tempore, Perspiciatis</p>
+            <h5><span class="meal2">03.</span> We Serve The Best Food in the country</h5>
+            <p>Lorem Ipsum Dolor Sit Amet, Consectetur Adipisicing Elit. Tempore, Perspiciatis</p>
+            <h5><span class="meal2">04.</span> We Serve The Best Food in the country</h5>
+            <p>Lorem Ipsum Dolor Sit Amet, Consectetur Adipisicing Elit. Tempore, Perspiciatis</p>
+        </div>
+    </main>
+    
+
+    <script src="main.js"></script> 
+</body>
+</html>

@@ -1,0 +1,367 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.menubar {
+    background-color: rgb(91, 91, 247);
+    width: 100%;
+    height: 50px;
+    display: flex;   
+    flex-wrap: nowrap;
+    align-items:center;
+    justify-content:space-between;
+   
+}
+
+.logo {
+    width: 45px;
+    height: 42px;
+    margin-left: 8px;
+    cursor: pointer;
+}
+.navBar a{
+    padding: 12px;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    transition: 0.4s;
+}
+.navBar a:hover{
+    background-color: blue;
+    color: yellow;
+}
+
+
+.bar {
+    display: none;
+    margin-right: 8px;
+}
+.bar1, .bar2, .bar3 {
+    background-color: white;
+    height: 5px;
+    width: 35px;
+    margin: 6px 0px;
+    transition: 0.4s;
+    cursor: pointer;
+}
+.active .bar1{
+    transform: translate(0, 11px) rotate(-45deg);
+}
+.active .bar3{
+    transform: translate(0, -11px) rotate(45deg);
+}
+.active .bar2{
+   opacity: 0;
+}
+
+.navbar {
+    display: none;
+background-color: rgb(74, 29, 180);
+background-color: rgb(74, 29, 180, 0.9);
+color: white;
+position: fixed;
+z-index: 2;
+top: 0;
+right: 0;
+width: 100%;
+height: 100%;
+}
+.navbar a{
+    display: block;
+    text-decoration: none;
+    font-size: 24px;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 12px;    
+    color: white;
+}
+#cancel {
+    position: absolute;
+    top: 0;
+    right: 8px;    
+    font-size: 20px;
+    display: block;
+    text-decoration: none;
+    font-size: 24px;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 12px;
+}
+#cancel:hover {
+    background-color: blue;
+    color: white;
+}
+.home {
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    
+}
+.homewords{
+    flex: 50%;
+    margin-left: 8px;
+
+}
+#word1{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 45px;
+    margin: 6px;
+    margin-bottom: 20px;
+}
+#word2{
+    font-size: 20px;
+    font-family:'Courier New', Courier, monospace;   
+    text-align: left;
+    margin-left: 30px;
+    margin-top: 20x;
+    margin-bottom: 20px;  
+}
+
+input[type=button]{
+    background-color: white;
+    color: black;
+    outline: none;
+    text-align: center;
+    border: 2px solid blue;
+    padding-top: 4px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 4px;
+    border-radius: 30px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 1s;
+    margin-top: 20px;
+}
+input[type=button]:hover {
+    background-color: blue;
+    color: white;
+}
+
+.homefood{
+    flex: 50%;
+}
+.homefood img {
+    width: 90%;
+    height: 90%;
+}
+.about{
+    display: flex;
+    align-items: center;
+}
+.aboutimage{
+    flex: 50%;
+}
+
+.aboutimage img{
+    background-image: url("./images/about-img.jpg");
+}
+
+#word3{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 45px;
+    margin: 6px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+#word4{
+    font-size: 20px;
+    font-family:'Courier New', Courier, monospace;   
+    text-align: left;
+    margin-top: 20x;
+    margin-bottom: 20px;  
+}
+#inp {
+    margin-left: 30%;
+}
+
+.meal{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 45px;
+    margin: 6px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.meal2 {
+    color: blue;
+}
+
+.container {
+    border: none;
+    border-top: 3px dashed rgb(0,0,0,0.3);
+    border-bottom: 3px dashed rgb(0,0,0,0.3);
+    padding: 12px;
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+}
+.link{
+    margin-left: 8px;
+}
+
+.mainmeal{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.mealimage{ 
+    flex: 50%;      
+    width: 40%;
+    height: 40%;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 10px 10px 5px rgb(0,0,0,0.3);
+    margin: 20px;
+    margin-top: 30px;
+    box-sizing: border-box;
+    
+}
+.content{
+    display: none;
+}
+.container input.change {
+    background-color: blue;
+    color: white;
+}
+
+.content img{ 
+   width: 100%;
+    border-radius: 10px;    
+    padding: 20px;
+    box-sizing: border-box;        
+}
+
+.mealwords {
+    flex: 50%;
+    margin: 20px;
+}
+.mealwords h5 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+}
+.mealwords p{
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 40px;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 600px) {
+
+    .navBar {
+        display: none;
+    }
+    .bar {
+        display: block;
+        margin-right: 8px;
+    }
+    .home {
+        display: flex;
+        align-items: center;
+        flex-direction: column;  
+        margin-bottom: 20px;
+        
+    }
+    .homewords{
+        flex: 100%;
+        margin-left: 8px;
+    
+    }
+    #word1{        
+        font-size: 35px;
+        margin-top: 40px;
+    }       
+    #word2{
+        font-size: 17px;
+        font-family:'Courier New', Courier, monospace;   
+        text-align: center;
+        margin-left: 10px;
+        margin-top: 20x;
+        margin-bottom: 20px;  
+    }
+    input[type=button]{
+        margin-top: 10px;
+        padding-top: 4px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 4px;
+        border-radius: 30px;
+        
+    }
+    .homefood img {
+        width: 70%;
+        height: 70%;
+    }
+    .about{
+        display: flex;
+        flex-direction: column;
+       
+    }
+    .aboutimage{
+        flex: 100%;
+    }
+    
+    .aboutimage img{
+        background-image: url("./images/about-img.jpg");
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+    }
+    
+    #word3{
+        font-size: 35px;
+        margin: 6px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    #word4{
+        font-size: 17px;
+        font-family:'Courier New', Courier, monospace;   
+        text-align: center;
+        margin-top: 20x;
+        margin-bottom: 20px;  
+    }
+    #inp {
+        margin-top: 10px;
+        padding-top: 4px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 4px;
+        border-radius: 30px;
+        margin-bottom: 20px;
+    }
+    .meal {
+        font-size: 35px;
+    }
+    .container {
+        flex-wrap: wrap;    
+    }
+
+    .mainmeal {
+        display: flex;
+        flex-direction: column;
+    }
+    .mealimage{              
+        width: 100%;
+        height: auto;        
+    }
+    .mealwords h5 {       
+        font-size: 17px;
+        line-height: 33px;
+    }
+    .mealwords p{
+        font-size: 15px;        
+        margin-left: 23px;
+        line-height: 20px;
+    }
+}
