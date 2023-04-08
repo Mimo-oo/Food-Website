@@ -1,11 +1,9 @@
-function change(x){
-    x.classList.toggle("active");
-
+function change(){
     var panel= document.getElementById('navbar');
-    if (panel.style.display === "none"){
-        panel.style.display = "block";
+    if (panel.style.width === "0%"){
+        panel.style.width = "50%";
     } else {
-        panel.style.display = "none";
+        panel.style.width = "0%";
     }
 
 }
@@ -53,13 +51,22 @@ function validate(){
     let psd = document.getElementById("psd").value;
     let tel = document.getElementById("tel").value;
     if (name == "" || text == ""){
-        alert("cannot be empty")
+        alert("cannot be empty, input necessary details")
     } else{
         alert("Thanks for Ordering")
     }
     if (psd == "" || tel == ""){
-        alert("cannot be empty")
+        alert("cannot be empty, input necessary details")
     } else{
         alert("Thanks for Ordering")
     }
+}
+function clos(){
+    var panel= document.getElementById('navbar');
+    if (panel.style.width === "0%"){
+        panel.style.width = "50%";
+    } else {
+        panel.style.width = "0%";
+    }
+
 }

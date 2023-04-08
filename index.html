@@ -10,29 +10,34 @@
 <body>
     <div class="menubar">
         <div class="log">
-            <img src="./images/images.jpg" class="logo" alt="Logo">
+            <img src="./images/logo2.png" class="logo" alt="Logo">
         </div>
         <div class="navBar">
-            <a href="#home">Home</a> 
+            <a href="#Home">Home</a> 
             <a href="#About">About</a> 
             <a href="#Menu">Menu</a> 
             <a href="#Popular">Popular</a> 
             <a href="#Gallery">Gallery</a> 
             <a href="#Order">Order</a> 
         </div>
-        <div onclick="change(this)" class="bar">
+        <div onclick="change()" class="bar">
             <div class="bar1"></div>
             <div class="bar2"></div>
             <div class="bar3"></div>
         </div>
     </div>
     <div class="navbar" id="navbar">
-        <a href="#Home">Home</a> 
-            <a href="#About">About</a> 
-            <a href="#Menu">Menu</a> 
-            <a href="#Popular">Popular</a> 
-            <a href="#Gallery">Gallery</a> 
-            <a href="#Order">Order</a> 
+        <div onclick="change()" class="bara">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="w-6 h-6 bara2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+        </div>
+        <a href="#Home" onclick="clos()">Home</a> 
+            <a href="#About" onclick="clos()">About</a> 
+            <a href="#Menu" onclick="clos()">Menu</a> 
+            <a href="#Popular" onclick="clos()">Popular</a> 
+            <a href="#Gallery" onclick="clos()">Gallery</a> 
+            <a href="#Order" onclick="clos()">Order</a> 
     </div>
     <section class="home" id="Home">
         <div class="homewords">
@@ -62,22 +67,22 @@
             <input type="button" value="Breakfast" id="chan" class="link " onclick="food(event, 'Breakfast')">
             <input type="button" value="Lunch" class="link" onclick="food(event, 'Lunch')">
             <input type="button" value="Dinner" class="link" onclick="food(event, 'Dinner')">
-            <input type="button" value="Desert" class="link" onclick="food(event, 'Desert')">
+            <input type="button" value="Boli" class="link" onclick="food(event, 'Boli')">
         </div>
     </section>
     <main class="mainmeal">
         <div class="mealimage">
                 <div class="content" id="Breakfast">
-                    <img src="./images/menu-breakfast.jpg">
+                    <img src="./images/beans.jpg">
                 </div>
                 <div class="content" id="Lunch">
-                    <img src="./images/menu-lunch.jpg">
+                    <img src="./images/pepper-soup.jpg">
                 </div>
                 <div class="content" id="Dinner">
-                    <img src="./images/menu-dinner.jpg">
+                    <img src="./images/Amala-and-Ewedu.jpg">
                 </div>
-                <div class="content" id="Desert">
-                    <img src="./images/menu-desert.jpg">
+                <div class="content" id="Boli">
+                    <img src="./images/boli.jpg">
                 </div>
         </div>
         <div class="mealwords">
@@ -98,7 +103,7 @@
         <div class="cardcont">
             <div class="card">               
                 <div class="cardimg">
-                    <img src="./images/product-1.jpg" alt="product">
+                    <img src="./images/jollof.jpg" alt="product">
                 </div>
                 <h6>Delicious Food</h6>
                 <p>$50.00</p>
@@ -106,7 +111,7 @@
             </div>
             <div class="card">               
                 <div class="cardimg">
-                    <img src="./images/product-4.jpg" alt="product">
+                    <img src="./images/moi.jpg" alt="product">
                 </div>
                 <h6>Delicious Food</h6>
                 <p>$50.00</p>
@@ -114,7 +119,7 @@
             </div>
             <div class="card">               
                 <div class="cardimg">
-                    <img src="./images/product-2.jpg" alt="product">
+                    <img src="./images/ofe akwu.jpg" alt="product">
                 </div>
                 <h6>Delicious Food</h6>
                 <p>$50.00</p>
@@ -122,7 +127,7 @@
             </div>
             <div class="card">               
                 <div class="cardimg">
-                    <img src="./images/product-3.jpg" alt="product">
+                    <img src="./images/rice.jpg" alt="product">
                 </div>
                 <h6>Delicious Food</h6>
                 <p>$50.00</p>
@@ -132,26 +137,26 @@
     </main>
     <section class="gallery" id="Gallery">
         <div class="meal">
-            <h4>Our Food <span class="meal2">Gallery</span></h4>
+            <h4>Our Food <span class="meal2">Gallery</span></h4>            
         </div>
         <div class="mgallery">
             <div class="delicacy">
-                <img src="./images/img1.jpg">                
+                <img src="./images/eba.jpg">                
             </div>
             <div class="delicacy">
-                <img src="./images/img2.jpg">
+                <img src="./images/efo.jpg">
             </div>
             <div class="delicacy">
-                <img src="./images/img3.jpg">
+                <img src="./images/egusi.jpg">
             </div>
             <div class="delicacy">
-                <img src="./images/img4.jpg">
+                <img src="./images/rice3.jpg">
             </div>
             <div class="delicacy">
-                <img src="./images/img5.jpg">
+                <img src="./images/porridge.jpg">
             </div>
             <div class="delicacy">
-                <img src="./images/img6.jpg">
+                <img src="./images/soup1.jpg">
             </div>
         </div>
     </section>
@@ -208,7 +213,10 @@
     <div class="end">
         <p>Copyright 2023 || All right reserved</p>
         </div>
-
+        <div>
+            <div class="two"></div>
+            <div class="one"></div>
+        </div>
     <script src="main.js"></script> 
 </body>
 </html>
